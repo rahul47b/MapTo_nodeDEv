@@ -1,0 +1,29 @@
+{
+  "name": "mapto_nodedev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js ",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon — exec babel-node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahul47b/MapTo_nodeDEv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahul47b/MapTo_nodeDEv/issues"
+  },
+  "homepage": "https://github.com/rahul47b/MapTo_nodeDEv#readme",
+  "dependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/node": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
