@@ -30,7 +30,7 @@ app.use((req, res, next) => {
 
 app.use("api/v1", router);
 
-// simple route
+// health_check 
 app.get("/nodeDev", (req, res) => {
   res.json({ message: "PONG!.. from roadToMap_Dev server." });
 });

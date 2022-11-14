@@ -6,7 +6,7 @@ import {userModel} from '../models/index'
 export const createUser = async (req,res)=>{
     try{
             const{first_name,last_name,email}=req.body;
-            // to do --- email validation and existing check ....
+            // to do --- email validation and existing check ...
             await userModel.create({first_name,last_name,email});
             res.status(200).send({
                 message:"user created successfully ..."
