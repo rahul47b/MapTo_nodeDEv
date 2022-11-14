@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import router from './src/routers/routes'
+import router from "./src/routers/routes";
 dotenv.config();
 // dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
 
@@ -28,8 +28,7 @@ app.use((req, res, next) => {
   return next();
 });
 
-
-app.use("api", router);
+app.use("api/v1", router);
 
 // simple route
 app.get("/nodeDev", (req, res) => {
@@ -37,5 +36,5 @@ app.get("/nodeDev", (req, res) => {
 });
 
 app.listen({ port: PORT }, () => {
-  console.info(`🚀 HRM server ready at ${process.env.SERVER_URL}`);
+  console.info(`🚀 server ready at ${process.env.SERVER_URL}`);
 });
